@@ -10,6 +10,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/mock-data/userData.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/drawer.vue" afterPath="$PROJECT_DIR$/demo/drawer.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/home.vue" afterPath="$PROJECT_DIR$/demo/home.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/styles/demo.scss" afterPath="$PROJECT_DIR$/demo/styles/demo.scss" />
@@ -362,12 +363,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526678921679</updated>
-      <workItem from="1526678922941" duration="6913000" />
+      <workItem from="1526678922941" duration="7005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6913000" />
+    <option name="totallyTimeSpent" value="7005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
