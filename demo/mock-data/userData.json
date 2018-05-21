@@ -7,7 +7,7 @@
           "name": "location 1",
           "admin": {
             "id": 0,
-            "fistName": "bob",
+            "firstName": "bob",
             "lastName": "belcher",
             "roles": "admin",
             "email": "bob@csmonitor.com",
@@ -22,7 +22,7 @@
           "userGroup": {
             "1": {
               "id": 1,
-              "fistName": "linda",
+              "firstName": "linda",
               "lastName": "belcher",
               "roles": "user",
               "email": "linda@barnesandnoble.com",
@@ -35,7 +35,7 @@
             },
             "2": {
               "id": 2,
-              "fistName": "tina",
+              "firstName": "tina",
               "lastName": "belcher",
               "roles": "user",
               "email": "tina@barnesandnoble.com",
@@ -48,7 +48,7 @@
             },
             "3": {
               "id": 3,
-              "fistName": "gene",
+              "firstName": "gene",
               "lastName": "belcher",
               "roles": "user",
               "email": "gene@barnesandnoble.com",
@@ -61,7 +61,76 @@
             },
             "4": {
               "id": 4,
-              "fistName": "louise ",
+              "firstName": "louise ",
+              "lastName": "belcher",
+              "roles": "user",
+              "email": "louise @barnesandnoble.com",
+              "phone": "494-300-5673",
+              "permissions": [
+                "ssoGroup"
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "location 2",
+          "admin": {
+            "id": 0,
+            "firstName": "Linda",
+            "lastName": "belcher",
+            "roles": "admin",
+            "email": "bob@csmonitor.com",
+            "phone": "494-300-5673",
+            "permissions": [
+              "piGroup",
+              "rqapGroup",
+              "ssoGroup",
+              "succeedGroup"
+            ]
+          },
+          "userGroup": {
+            "1": {
+              "id": 1,
+              "firstName": "linda",
+              "lastName": "belcher",
+              "roles": "user",
+              "email": "linda@barnesandnoble.com",
+              "phone": "494-300-5673",
+              "permissions": [
+                "piGroup",
+                "ssoGroup",
+                "succeedGroup"
+              ]
+            },
+            "2": {
+              "id": 2,
+              "firstName": "tina",
+              "lastName": "belcher",
+              "roles": "user",
+              "email": "tina@barnesandnoble.com",
+              "phone": "494-300-5673",
+              "permissions": [
+                "piGroup",
+                "ssoGroup",
+                "succeedGroup"
+              ]
+            },
+            "3": {
+              "id": 3,
+              "firstName": "gene",
+              "lastName": "belcher",
+              "roles": "user",
+              "email": "gene@barnesandnoble.com",
+              "phone": "494-300-5673",
+              "permissions": [
+                "piGroup",
+                "ssoGroup",
+                "succeedGroup"
+              ]
+            },
+            "4": {
+              "id": 4,
+              "firstName": "louise ",
               "lastName": "belcher",
               "roles": "user",
               "email": "louise @barnesandnoble.com",
@@ -79,7 +148,7 @@
           "locations": false,
           "admin": {
             "id": 0,
-            "fistName": "Topicware",
+            "firstName": "Topicware",
             "lastName": "Sterling",
             "roles": "admin",
             "email": "Malory@csmonitor.com",
@@ -99,7 +168,7 @@
               "name": "Location A",
               "admin": {
                 "id": 0,
-                "fistName": "Malory",
+                "firstName": "Malory",
                 "lastName": "Sterling",
                 "roles": "admin",
                 "email": "Malory@csmonitor.com",
@@ -114,7 +183,7 @@
               "userGroup": {
                 "1": {
                   "id": 1,
-                  "fistName": "Archer",
+                  "firstName": "Archer",
                   "lastName": "Sterling",
                   "roles": "user",
                   "email": "Archer@barnesandnoble.com",
@@ -127,7 +196,7 @@
                 },
                 "2": {
                   "id": 2,
-                  "fistName": "Lana",
+                  "firstName": "Lana",
                   "lastName": "Kane",
                   "roles": "user",
                   "email": "Lana@barnesandnoble.com",
@@ -140,7 +209,7 @@
                 },
                 "3": {
                   "id": 3,
-                  "fistName": "Cyril",
+                  "firstName": "Cyril",
                   "lastName": "Figgis",
                   "roles": "user",
                   "email": "Cyril@barnesandnoble.com",
@@ -153,7 +222,7 @@
                 },
                 "4": {
                   "id": 4,
-                  "fistName": "Pam",
+                  "firstName": "Pam",
                   "lastName": "Poovey",
                   "roles": "user",
                   "email": "Pam@barnesandnoble.com",
