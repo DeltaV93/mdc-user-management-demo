@@ -3,7 +3,8 @@
     <div class="col-12 col-md-9">
       <div class="row">
         <!--USER TABLE-->
-        <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <table id="example" class="table table-striped table-bordered"
+               style="width:100%">
           <thead>
           <tr>
             <th>Name</th>
@@ -31,7 +32,6 @@
 </template>
 
 <script>
-  import userData from './mock-data/userData.json'
   import './utils/tableData'
   export default {
     components: {
@@ -40,7 +40,6 @@
     data() {
       return {
         title: 'User Dropdown',
-        data: userData.orgData,
         fields: [
           [ "Tiger Nixon", "System Architect", "$3,120", "2011/04/25", "Edinburgh", 5421 ],
           [ "Garrett Winters", "Director", "$8,422", "2011/07/25", "Edinburgh", 8422 ],

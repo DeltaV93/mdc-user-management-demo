@@ -1,55 +1,56 @@
 <template>
+  <div v-if="db[userID].adminUser"
+       class="col-6 col-md-3 sidebar-offcanvas mt-5"
+       id="sidebar">
+    <div class="list-group list-group-flush">
+      <li href="#" class="list-group-item list-group__header">
+        <h5>{{ db[userID].orgStructure.parentOrganization }}</h5>
+      </li>
+      <!--check if sub agency -->
+      <div >
 
+        <div v-if="db[userID].orgStructure.subAgency">
+          <li class="list-group-item"
+              v-for="agency in db[userID].orgStructure.subAgency"
+              :data-toggle="agency.locations ? 'collapse':null"
+              :data-target="agency.locations ? '#' + agency.name:null"
+              v-bind:aria-expanded="agency.locations ? true:null"
+              v-bind:aria-controls="agency.locations ? agency.name:null">
+              <a href="#">{{ agency.name }}</a>
 
+          </li>
+          <!--<div v-if="agency.locations">-->
+            <!--<li class="list-group-item"-->
+                <!--v-for="location in agency.locations">-->
+              <!--<a href="#">{{ location.name }}</a>-->
+            <!--</li>-->
+          <!--</div>-->
+        </div>
 
-    <div class="col-6 col-md-3 sidebar-offcanvas mt-5" id="sidebar">
-      <div class="list-group">
-        <a href="#" class="list-group-item active">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
-        <a href="#" class="list-group-item">Link</a>
       </div>
-    </div><!--/span-->
 
+      <a id="db[userID].orgStructure"
+         href="#"
+         class="list-group-item">Link</a>
+    </div>
+  </div><!--/span-->
 
-
-  <!--</div>&lt;!&ndash;/row&ndash;&gt;-->
-
-
-
-  <!--<mdc-drawer-->
-    <!--ref="drawer"-->
-    <!--class="primary-drawer"-->
-    <!--toggle-on="toggle-drawer">-->
-    <!--<mdc-drawer-header temporary/>-->
-    <!--<mdc-drawer-list dense>-->
-      <!--<mdc-drawer-item to="/">Home</mdc-drawer-item>-->
-      <!--<mdc-drawer-item to="/docs/getting-started">Getting Started</mdc-drawer-item>-->
-      <!--<mdc-drawer-divider />-->
-      <!--<mdc-drawer-item-->
-        <!--v-for="link in links"-->
-        <!--:to="link.to"-->
-        <!--:key="link.id">-->
-        <!--{{ link.name }}-->
-      <!--</mdc-drawer-item>-->
-    <!--</mdc-drawer-list>-->
-  <!--</mdc-drawer>-->
 </template>
 
 <script>
-import links from './links.js'
+  import links from './links.js'
+  import userData from './mock-data/users.json'
 
-export default {
-  data() {
-    return {
-      links
+  export default {
+    data() {
+      return {
+//      userID: userData.currentUser.id,
+        userID: "5b046590aac666aabf1226cc",
+        db: userData.userDB
+      }
+    },
+    mounted() {
+
     }
   }
-}
 </script>

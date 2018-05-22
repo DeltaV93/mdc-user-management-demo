@@ -1,0 +1,387 @@
+{
+  "currentUser": {
+    "id": "5b046590aac666aabf1226cc",
+    "userName": "Cherry",
+    "firstName": "Fuentes",
+    "lastName": "Conway",
+    "email": "<ReferenceError: word is not defined>",
+    "phone": "+1 (831) 537-3044",
+    "mobile": "+1 (956) 583-3466",
+    "address": "535 Woodbine Street",
+    "city": "Cornfields",
+    "state": "Alaska",
+    "zip": 6066,
+    "fax": "+1 (963) 480-2472"
+  },
+  "userDB": {
+    "5b046590aac666aabf1226cc": {
+      "userDetail": {
+        "userName": "Cherry",
+        "firstName": "Fuentes",
+        "lastName": "Conway",
+        "email": "<ReferenceError: word is not defined>",
+        "phone": "+1 (831) 537-3044",
+        "mobile": "+1 (956) 583-3466",
+        "address": "535 Woodbine Street",
+        "city": "Cornfields",
+        "state": "Alaska",
+        "zip": 6066,
+        "fax": "+1 (963) 480-2472"
+      },
+      "resources": {
+        "displayName": "",
+        "id": "",
+        "name": "",
+        "url": ""
+      },
+      "permissions": {
+        "userManagment": true,
+        "piGroup": true,
+        "rqGroup": true,
+        "ssoGroup": true,
+        "succeedGroup": true
+      },
+      "adminUser": true,
+      "orgStructure": {
+        "parentOrganization": "EXPOSA",
+        "currentLocation": "QUILK",
+        "locations": {
+          "1": {
+            "name": "location 1",
+            "admin": {
+              "id": "0",
+              "firstName": "bob",
+              "lastName": "belcher",
+              "roles": "admin",
+              "email": "bob@csmonitor.com",
+              "phone": "494-300-5673",
+              "permissions": [
+                "piGroup",
+                "rqapGroup",
+                "ssoGroup",
+                "succeedGroup"
+              ]
+            },
+            "userGroup": {
+              "1": {
+                "id": "1",
+                "firstName": "linda",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "linda@barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "piGroup",
+                  "ssoGroup",
+                  "succeedGroup"
+                ]
+              },
+              "2": {
+                "id": "2",
+                "firstName": "tina",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "tina@barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "piGroup",
+                  "ssoGroup",
+                  "succeedGroup"
+                ]
+              },
+              "3": {
+                "id": "3",
+                "firstName": "gene",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "gene@barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "piGroup",
+                  "ssoGroup",
+                  "succeedGroup"
+                ]
+              },
+              "4": {
+                "id": "4",
+                "firstName": "louise ",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "louise @barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "ssoGroup"
+                ]
+              }
+            }
+          },
+          "2": {
+            "name": "location 2",
+            "admin": {
+              "id": "0",
+              "firstName": "Linda",
+              "lastName": "belcher",
+              "roles": "admin",
+              "email": "bob@csmonitor.com",
+              "phone": "494-300-5673",
+              "permissions": [
+                "piGroup",
+                "rqapGroup",
+                "ssoGroup",
+                "succeedGroup"
+              ]
+            },
+            "userGroup": {
+              "1": {
+                "id": "1",
+                "firstName": "linda",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "linda@barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "piGroup",
+                  "ssoGroup",
+                  "succeedGroup"
+                ]
+              },
+              "2": {
+                "id": "2",
+                "firstName": "tina",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "tina@barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "piGroup",
+                  "ssoGroup",
+                  "succeedGroup"
+                ]
+              },
+              "3": {
+                "id": "3",
+                "firstName": "gene",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "gene@barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "piGroup",
+                  "ssoGroup",
+                  "succeedGroup"
+                ]
+              },
+              "4": {
+                "id": "4",
+                "firstName": "louise ",
+                "lastName": "belcher",
+                "roles": "user",
+                "email": "louise @barnesandnoble.com",
+                "phone": "494-300-5673",
+                "permissions": [
+                  "ssoGroup"
+                ]
+              }
+            }
+          }
+        },
+        "subAgency": {
+          "1": {
+            "name": "Myworks",
+            "locations": false,
+            "admin": {
+              "id": "0",
+              "firstName": "Topicware",
+              "lastName": "Sterling",
+              "roles": "admin",
+              "email": "Malory@csmonitor.com",
+              "phone": "494-300-5673",
+              "permissions": [
+                "piGroup",
+                "rqapGroup",
+                "ssoGroup",
+                "succeedGroup"
+              ]
+            }
+          },
+          "2": {
+            "name": "Blogpad",
+            "locations": {
+              "1": {
+                "name": "Location A",
+                "admin": {
+                  "id": "0",
+                  "firstName": "Malory",
+                  "lastName": "Sterling",
+                  "roles": "admin",
+                  "email": "Malory@csmonitor.com",
+                  "phone": "494-300-5673",
+                  "permissions": [
+                    "piGroup",
+                    "rqapGroup",
+                    "ssoGroup",
+                    "succeedGroup"
+                  ]
+                },
+                "userGroup": {
+                  "1": {
+                    "id": "1",
+                    "firstName": "Archer",
+                    "lastName": "Sterling",
+                    "roles": "user",
+                    "email": "Archer@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "piGroup",
+                      "ssoGroup",
+                      "succeedGroup"
+                    ]
+                  },
+                  "2": {
+                    "id": "2",
+                    "firstName": "Lana",
+                    "lastName": "Kane",
+                    "roles": "user",
+                    "email": "Lana@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "piGroup",
+                      "ssoGroup",
+                      "succeedGroup"
+                    ]
+                  },
+                  "3": {
+                    "id": "3",
+                    "firstName": "Cyril",
+                    "lastName": "Figgis",
+                    "roles": "user",
+                    "email": "Cyril@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "piGroup",
+                      "ssoGroup",
+                      "succeedGroup"
+                    ]
+                  },
+                  "4": {
+                    "id": "4",
+                    "firstName": "Pam",
+                    "lastName": "Poovey",
+                    "roles": "user",
+                    "email": "Pam@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "ssoGroup"
+                    ]
+                  }
+                }
+              },
+              "2": {
+                "name": "Location B",
+                "admin": {
+                  "id": "0",
+                  "firstName": "Malory",
+                  "lastName": "Sterling",
+                  "roles": "admin",
+                  "email": "Malory@csmonitor.com",
+                  "phone": "494-300-5673",
+                  "permissions": [
+                    "piGroup",
+                    "rqapGroup",
+                    "ssoGroup",
+                    "succeedGroup"
+                  ]
+                },
+                "userGroup": {
+                  "1": {
+                    "id": "1",
+                    "firstName": "Archer",
+                    "lastName": "Sterling",
+                    "roles": "user",
+                    "email": "Archer@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "piGroup",
+                      "ssoGroup",
+                      "succeedGroup"
+                    ]
+                  },
+                  "2": {
+                    "id": "2",
+                    "firstName": "Lana",
+                    "lastName": "Kane",
+                    "roles": "user",
+                    "email": "Lana@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "piGroup",
+                      "ssoGroup",
+                      "succeedGroup"
+                    ]
+                  },
+                  "3": {
+                    "id": "3",
+                    "firstName": "Cyril",
+                    "lastName": "Figgis",
+                    "roles": "user",
+                    "email": "Cyril@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "piGroup",
+                      "ssoGroup",
+                      "succeedGroup"
+                    ]
+                  },
+                  "4": {
+                    "id": "4",
+                    "firstName": "Pam",
+                    "lastName": "Poovey",
+                    "roles": "user",
+                    "email": "Pam@barnesandnoble.com",
+                    "phone": "494-300-5673",
+                    "permissions": [
+                      "ssoGroup"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "5b046590354ef0d8dc1f3841": {
+      "userDetail": {
+        "userName": "Langley",
+        "firstName": "Russell",
+        "lastName": "Lara",
+        "email": "<ReferenceError: word is not defined>",
+        "phone": "+1 (898) 565-3220",
+        "mobile": "+1 (948) 513-2191",
+        "address": "320 Broome Street",
+        "city": "Silkworth",
+        "state": "South Carolina",
+        "zip": 1232,
+        "fax": "+1 (984) 585-3501"
+      },
+      "resources": {
+        "displayName": "",
+        "id": "",
+        "name": "",
+        "url": ""
+      },
+      "permissions": {
+        "userManagment": false,
+        "piGroup": false,
+        "rqGroup": true,
+        "ssoGroup": false,
+        "succeedGroup": true
+      },
+      "adminUser": false,
+      "orgStructure": {
+        "parentOrganization": "TYPHONICA",
+        "currentLocation": "EYERIS"
+      }
+    }
+  }
+}
