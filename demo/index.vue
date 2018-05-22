@@ -1,15 +1,17 @@
 <template>
-  <mdc-layout-app>
-    
+  <div>
     <toolbar slot="toolbar"/>
-    
-    <drawer slot="drawer"/>
-    
-    <main class="content">
-      <router-view/>
-    </main>
 
-  </mdc-layout-app>
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+      <drawer slot="drawer"/>
+      <main class="content">
+        <router-view/>
+      </main>
+      </div>
+    </div>
+  </div>
+
 </template>
 
 
