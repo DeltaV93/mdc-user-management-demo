@@ -17,6 +17,7 @@
             v-bind:aria-controls="agency.locations ? agency.name:null">
           <a href="#"><span v-if="agency.locations">&#x203A;</span>{{ agency.name }}</a>
         </li>
+        <!--IF SUB AGENCY HAS MUTIPLE LOCATIONS-->
         <div v-if="agency.locations"
              v-bind:id="agency.name"
              class="collapse"
@@ -29,10 +30,14 @@
         </div>
       </div>
 
-
-      <a id="db[userID].orgStructure"
-         href="#"
-         class="list-group-item">Link</a>
+      <!--check if org has mutiple locations -->
+      <div v-if="db[userID].orgStructure.locations"
+           v-for="location in db[userID].orgStructure.locations"
+           class="list-group-item">
+        <li>
+          <a href="#">{{ location.name }}</a>
+        </li>
+      </div>
     </div>
   </div><!--/span-->
 
