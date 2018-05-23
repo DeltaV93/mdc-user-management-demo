@@ -33,6 +33,7 @@
 
 <script>
   import './utils/tableData'
+  import userData from './mock-data/users.json'
   export default {
     components: {
       about: () => import('../docs/about.md')
@@ -46,6 +47,13 @@
           // ...
         ]
       }
+    },
+    computed() {
+    // update the table data with current user view
+    // update the ui to show which item is active
+    },
+    methods(){
+    // create a function that get the user data based on link clicked
     },
     mounted(){
       $("#example").dataTable({
