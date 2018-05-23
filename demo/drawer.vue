@@ -4,30 +4,31 @@
        id="sidebar">
     <div class="list-group list-group-flush">
       <li href="#" class="list-group-item list-group__header">
-        <h5>{{ db[userID].orgStructure.parentOrganization }}</h5>
+        <h5 class="mb-0">{{ db[userID].orgStructure.parentOrganization }}</h5>
       </li>
       <!--check if sub agency -->
-      <div >
-
-        <div v-if="db[userID].orgStructure.subAgency">
-          <li class="list-group-item"
-              v-for="agency in db[userID].orgStructure.subAgency"
-              :data-toggle="agency.locations ? 'collapse':null"
-              :data-target="agency.locations ? '#' + agency.name:null"
-              v-bind:aria-expanded="agency.locations ? true:null"
-              v-bind:aria-controls="agency.locations ? agency.name:null">
-              <a href="#">{{ agency.name }}</a>
-
-          </li>
-          <!--<div v-if="agency.locations">-->
-            <!--<li class="list-group-item"-->
-                <!--v-for="location in agency.locations">-->
-              <!--<a href="#">{{ location.name }}</a>-->
-            <!--</li>-->
-          <!--</div>-->
+      <div v-if="db[userID].orgStructure.subAgency"
+           v-for="agency in db[userID].orgStructure.subAgency"
+           class="list-group-item">
+        <li :data-toggle="agency.locations ? 'collapse':null"
+            :data-target="agency.locations ? '#' + agency.name:null"
+            v-bind:id="agency.locations ? 'accordion--' + agency.name:null"
+            v-bind:aria-expanded="agency.locations ? true:null"
+            v-bind:aria-controls="agency.locations ? agency.name:null">
+          <a href="#"><span v-if="agency.locations">&#x203A;</span>{{ agency.name }}</a>
+        </li>
+        <div v-if="agency.locations"
+             v-bind:id="agency.name"
+             class="collapse"
+             aria-labelledby="headingTwo"
+             data-parent="#sidebar">
+          <div v-for="location in agency.locations"
+               class="card-body">
+            <a href="#">{{location.name}}</a>
+          </div>
         </div>
-
       </div>
+
 
       <a id="db[userID].orgStructure"
          href="#"
@@ -38,7 +39,6 @@
 </template>
 
 <script>
-  import links from './links.js'
   import userData from './mock-data/users.json'
 
   export default {
