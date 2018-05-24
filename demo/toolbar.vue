@@ -5,7 +5,7 @@
     <mdc-toolbar-row>
       <mdc-toolbar-section align-start >
         <mdc-toolbar-menu-icon event="toggle-drawer"/>
-        <mdc-toolbar-title @click="$router.push('/')">{{ 'vue\u2022mdc\u2022adapter' }}</mdc-toolbar-title>
+        <mdc-toolbar-title @click="$router.push('/')">{{ 'User Management' }}</mdc-toolbar-title>
       </mdc-toolbar-section>
       <mdc-toolbar-section
         shrink-to-fit

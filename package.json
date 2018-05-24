@@ -34,10 +34,12 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "dev:riot": "cross-env NODE_ENV=development webpack-dev-server --config webpack.riot.config.js",
     "test": "jest --runInBand",
     "testnc": "NODE_ENV=test; jest --runInBand --no-cache",
     "build": "run-s build:**",
     "build:demo": "cross-env NODE_ENV=production webpack",
+    "build:riot": "cross-env NODE_ENV=production webpack --config webpack.riot.config.js",
     "build:dist": "run-s build:dist:**",
     "build:dist:clean": "rimraf dist",
     "build:dist:scss": "copyfiles -u 1 \"components/**/*.scss\" dist",
@@ -68,7 +70,8 @@
     }
   },
   "dependencies": {
-    "material-components-web": "^0.35.0"
+    "material-components-web": "^0.35.0",
+    "riot-hot-reload": "^1.0.0"
   },
   "peerDependencies": {
     "vue": "^2.5.6"
@@ -118,6 +121,9 @@
     "prettier": "^1.12.1",
     "regenerator-runtime": "^0.11.1",
     "rimraf": "^2.6.2",
+    "riot": "^3.10.1",
+    "riot-route": "^3.1.3",
+    "riot-tag-loader": "^2.0.2",
     "rollup": "^0.58.2",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-commonjs": "^9.1.0",
